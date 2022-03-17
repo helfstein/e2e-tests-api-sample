@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  pocapisample:
+    image: ${DOCKER_REGISTRY-}pocapisample
+    container_name: pocapisample
+    build:
+      context: .
+      dockerfile: PocApiSample/Dockerfile
